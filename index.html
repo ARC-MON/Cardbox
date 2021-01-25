@@ -1,0 +1,183 @@
+<html>
+  <head>
+      <title>Deckbuilder</title>
+      <link rel="stylesheet" href="style/style2.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container-fluid" id="Box">
+
+      <div id="Info">
+        <img id="Photo" src=""/>
+      </div>
+
+      <div class="row logos" id="Logo">
+        <div class="col-lg-1 offset-lg-1 logos">
+          <center>
+          <img src="checkbox/Logo2.svg" alt="Cardbox" height="87" width="100" />
+        </center>
+        </div>
+      </div>
+
+      <div class='row'>
+
+        <div class="col-lg-7 offset-lg-1" id="Search">
+
+          <div class='row' id="Searchrow1">
+
+            <div class="col-lg-2" id="Cardname">
+              <div class="form-group">
+                <input autocomplete="off" type="text" id="Name" class="searchbox" placeholder="Card Name">
+              </div>
+            </div>
+
+            <div class="col-lg-2" id="CardCost">
+              <div class="form-group">
+                <input autocomplete="off" type="number" id="Cost" class="searchbox" placeholder="Cost">
+              </div>
+            </div>
+
+            <div class="col-lg-6 d-flex justify-content-between" id="Checkbox1">
+                <input autocomplete="off" type="checkbox" id="Red" class="check">
+                  <label for="Red"><img class="photobox" src="checkbox/Red2.png" /></label>
+                <input autocomplete="off" type="checkbox" id="Blue" class="check">
+                  <label for="Blue"><img class="photobox" src="checkbox/Blue2.png" /></label>
+                <input autocomplete="off" type="checkbox" id="Black" class="check">
+                    <label for="Black"><img class="photobox" src="checkbox/Black2.png" /></label>
+                <input autocomplete="off" type="checkbox" id="Green" class="check">
+                    <label for="Green"><img class="photobox" src="checkbox/Green2.png" /></label>
+                <input autocomplete="off" type="checkbox" id="White" class="check">
+                    <label for="White"><img class="photobox" src="checkbox/White2.png" /></label>
+                <input autocomplete="off" type="checkbox" id="Less" class="check">
+                    <label for="Less"><img class="photobox" src="checkbox/Less2.png" /></label>
+                <input autocomplete="off" type="checkbox" id="Multi" class="check">
+                      <label for="Multi"><img class="photobox" src="checkbox/Multi2.png" /></label>
+                <input autocomplete="off" type="checkbox" id="Legend" class="check">
+                      <label for="Legend"><img class="photobox" src="checkbox/Legend2.png" /></label>
+            </div>
+
+            <div class="col-lg-2" id="Cardrarity">
+              <div class="form-group">
+                <select autocomplete="off" id="Rarity">
+                  <option value="">-</option>
+                  <option value="Common">Common</option>
+                  <option value="Uncommon">Uncommon</option>
+                  <option value="Rare">Rare</option>
+                  <option value="Mythic">Mythic</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+          <div class='row' id="Searchrow2">
+
+            <div class="col-lg-2" id="Cardattack">
+              <div class="form-group">
+                <input autocomplete="off" type="number" id="Attack" class="searchbox" placeholder="Attack">
+              </div>
+            </div>
+
+            <div class="col-lg-2" id="Cardtough">
+              <div class="form-group">
+                <input autocomplete="off" type="number" id="Tough" class="searchbox" placeholder="Tough...">
+              </div>
+            </div>
+
+            <div class="col-lg-2" id="Cardtype">
+              <div class="form-group">
+                <input autocomplete="off" type="text" id="Type" class="searchbox" placeholder="Type">
+              </div>
+            </div>
+
+            <div class="col-lg-2" id="Cardstype">
+              <div class="form-group">
+                <input autocomplete="off" type="text" id="Stype" class="searchbox" placeholder="Sube-Type">
+              </div>
+            </div>
+
+            <div class="col-lg-2" id="Cardloyalty">
+              <div class="form-group">
+                <input autocomplete="off" type="number" id="Loyalty" class="searchbox" placeholder="Loyalty">
+              </div>
+            </div>
+
+            <div class="col-lg-2" id="Cardeffect">
+              <div class="form-group">
+                <input autocomplete="off" type="text" id="Effect" class="searchbox" placeholder="Effect">
+              </div>
+            </div>
+
+          </div>
+
+          <div class='row' id="Cards">
+          </div>
+
+
+        </div>
+
+        <div class="col-lg-2 offset-lg-1" id="Deck">
+
+          <div class='row tab' id="Buttons">
+            <button class="tablinks col-lg-4" id="MainButton" name="Main" >Main</button>
+            <button class="tablinks col-lg-4" id="SideButton" name="Side" >Side</button>
+            <button class="tablinks col-lg-4" id="CompButton" name="Comp">Comp...</button>
+          </div>
+
+          <div class='row' id="Deckname">
+            <div class="form-group col-lg-12">
+                <input type="text" id="Dname" placeholder="Deck Name">
+            </div>
+          </div>
+
+          <div class='container' id="Deckcontent">
+              <div id="Main" class="tabcontent">
+              <table id="MainT">
+                <tr>
+                </tr>
+              </table>
+            </div>
+
+          <div id="Side" class="tabcontent">
+            <table id="SideT">
+              <tr>
+              </tr>
+            </table>
+          </div>
+          <div id="Comp" class="tabcontent">
+            <table id="CompT">
+              <tr>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class='row ' id="Bottomcontainer">
+          <div class='col-lg-6' id="Capacity">
+            0/60
+          </div>
+
+          <div class='col-lg-6'id="Export">
+            <button class='col-lg-12' id="ExportDe">Export</button>
+        </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
+<script src="script/script.js">
+
+</script>

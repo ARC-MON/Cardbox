@@ -1,0 +1,230 @@
+html{
+  overflow: scroll !important;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+body{
+  background-color: #1B2734 !important;
+}
+
+.logos{
+  overflow: visible!important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+html::-webkit-scrollbar {
+  display: none !important;
+}
+
+.container-fluid{
+  background-color: #1B2734;
+  color:white;
+}
+#Search{
+  background-color: #113551;
+}
+#Deck,#Buttons{
+  background-color: #113551;
+  border-radius: 10px 10px 0px 0px;
+}
+#MainButton{
+  border-radius: 10px 0px 0px 0px;
+}
+#CompButton{
+  border-radius: 0px 10px 0px 0px;
+}
+.photobox{
+  width: 40px;
+  height: 60px;
+  padding-top:20px;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+}
+.check{
+  display:none;
+}
+#Logo{
+  padding:10px;
+}
+
+#Name,#Attack,#Cost,#Tough,#Rarity,#Type,#Stype,#Loyalty,#Dname,#Effect{
+  width:100%;
+  background-color: #DFDFDF;
+  border:none;
+  text-align:right;
+  border-radius: 10px;
+  padding-right:10px;
+  margin-top: 10px;
+  height: 35px;
+}
+#Searchrow1,#Searchrow2{
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+ user-select: none;
+}
+
+#search{
+  border-radius: 10px 10px 0px 0px;
+}
+
+#Name,#Cost,#Rarity,#Dname{
+  margin-top: 20px;
+}
+
+.tab button:hover,#ExportDe:hover{
+  background-color: #294A63;
+}
+
+.tab button.active,#ExportDe.active{
+  background-color: #294A63;
+}
+
+.tab button,#ExportDe{
+  color:white;
+  background-color: #113551;
+  float: left;
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s !important;
+}
+
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+#Cards{
+  border-top:solid 1px;
+  border-bottom:solid 1px;
+  height: 350px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#Cards::-webkit-scrollbar {
+  display: none;
+}
+.cardssearch,.question{
+  height: 240px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+}
+
+#Checkbox1{
+text-align: center;
+overflow: hidden;
+}
+
+#Deckcontent{
+  background-color: #DFDFDF;
+    height: 307px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-radius: 10px;
+}
+#DeckContent::-webkit-scrollbar {
+  display: none;
+}
+#Capacity{
+  padding: 14px;
+  text-align: center;
+}
+.tablinks,#ExportDe{
+  overflow: hidden;
+}
+#Info{
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+   z-index:7;
+}
+#Photo{
+  width: 85%;
+  height: 85%;
+}
+
+table{
+  width:100%;
+  padding: 0;
+  margin: 0;
+  border-spacing:0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+}
+table td,th{
+  border-bottom: 1px solid;
+}
+td{
+  padding:1%;
+}
+.td2{
+  color:white;
+  background-color: #294A63;
+  border-color:black;
+  border-left:1px solid;
+  border-right:1px solid;
+  border-color:black;
+  padding:0;
+  width:80%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.td1,.amount{
+  color: White;
+  border-color:black;
+  width:10%;
+  text-align: center;
+  background-color: #294A63;
+}
+span{
+  background-color: rgba(41,74,99,0.7);
+  display: inline-block;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+}
+.container{
+  padding: 0!important;
+}
+#MainButton{
+  border-right: solid 1px #294A63;
+  border-bottom: solid 1px #294A63;
+}
+#SideButton{
+  border-bottom: solid 1px #294A63;
+}
+#CompButton{
+  border-left: solid 1px #294A63;
+  border-bottom: solid 1px #294A63;
+}
