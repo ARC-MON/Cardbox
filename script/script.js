@@ -2,6 +2,7 @@ $(document).ready(function(location){
 
   var amain=0,aside=0,acomp=0;
 
+  var timer;
 
   //Starting on Maindeck
   $.fn.starttable = function()
@@ -94,9 +95,9 @@ $(document).ready(function(location){
       $(this).remove();
     }
     else
-      {
-        $(this).find(".amount").html(parseInt($(this).find(".amount").html())-1);
-      }
+    {
+      $(this).find(".amount").html(parseInt($(this).find(".amount").html())-1);
+    }
 
       var active = $(".tab").find(".active").attr("name");
 
@@ -118,11 +119,18 @@ $(document).ready(function(location){
 
   });
 
-  //on changing textbox
+  //on changing textbox search
   $(".searchbox").keyup(function(){
-    $(this).ajaxrequest();
+
+    clearTimeout(timer);
+
+    timer = setTimeout (() => {
+      $(this).ajaxrequest();
+    } ,500)
+
   });
 
+  //on checkbox press search
   $(".check").change(function(){
     if($(this).is(':checked'))
       $('label[for="' + $(this).attr('id') + '"]').find(".photobox").attr("src","checkbox/"+$(this).attr('id')+".png");
@@ -132,6 +140,7 @@ $(document).ready(function(location){
     $(this).ajaxrequest();
   });
 
+  //on rarity selection search
   $("#Rarity").change(function(){
     $(this).ajaxrequest();
   });
@@ -202,11 +211,6 @@ $(document).ready(function(location){
                   $(this).setamount();
                   }
                   break;
-
-
-
-
-
                 case "Side":
                   if(aside<(15-acomp))
                   {
@@ -319,6 +323,8 @@ $(document).ready(function(location){
       });
       if(acomp == 1)
         decklist+="1 "+compname;
+
+      navigator.clipboard.writeText(decklist);
       alert(decklist);
     }
     else

@@ -1,0 +1,113 @@
+body{
+  background-color: #1B2734 !important;
+}
+.container-fluid{
+  background-color: #1B2734;
+  color:white;
+}
+#Search{
+  background-color: #113551;
+}
+#Deck{
+  background-color: #113551;
+}
+.photobox{
+  width: 40px;
+  height: 60px;
+  padding-top:20px;
+  vertical-align: middle;
+}
+.check{
+  display:none;
+}
+#Logo{
+  padding:10px;
+}
+
+#Name,#Attack,#Cost,#Tough,#Rarity,#Type,#Stype,#Loyalty,#Dname,#Effect{
+  width:100%;
+  background-color: #DFDFDF;
+  border:none;
+  text-align:right;
+  border-radius: 10px;
+  padding-right:10px;
+  margin-top: 10px;
+  height: 35px;
+}
+#Name,#Cost,#Rarity,#Dname{
+  margin-top: 20px;
+}
+
+.tab button:hover,#ExportDe:hover{
+  background-color: #294A63;
+}
+
+.tab button.active,#ExportDe.active{
+  background-color: #294A63;
+}
+
+.tab button,#ExportDe{
+  color:white;
+  background-color: #113551;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+.tabcontent {
+  display: none;
+  border-top: none;
+}
+#Cards{
+  border-top:solid 1px;
+  border-bottom:solid 1px;
+  height: 350px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+#Cards::-webkit-scrollbar {
+  display: none;
+}
+.cardssearch{
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+}
+
+#Checkbox1{
+text-align: center;
+overflow: hidden;
+}
+
+#Deckcontent{
+  background-color: #DFDFDF;
+    height: 307px;
+}
+#Capacity{
+  padding: 14px;
+  text-align: center;
+}
+.tablinks,#ExportDe{
+  overflow: hidden;
+}
+#Info{
+  width: 50%;
+  height: 50%;
+  background-color: red;
+  position: absolute;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+   user-select: none;
+}
+#Photo{
+  width: 85%;
+  height: 85%;
+}
